@@ -23,9 +23,9 @@ function changeImage(imageNum)
 
 /* Like Button */
 function addRecommend(name, link){
-//    if (Math.random() < 0.3) {
-//        return;
-//    }
+   if (Math.random() < 0.3) {
+       return true;
+   }
     let elem = document.createElement(name);
     const pIndex = Math.floor((Math.random() * nameList.length) + 1);
 
