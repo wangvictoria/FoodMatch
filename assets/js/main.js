@@ -1,6 +1,6 @@
 /**
-* Template Name: iPortfolio - v1.4.0
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+* Template Name: iswipePage - v1.4.0
+* Template URL: https://bootstrapmade.com/iswipePage-bootstrap-swipePage-websites-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
@@ -131,16 +131,16 @@
 
   // Porfolio isotope and filter
   $(window).on('load', function() {
-    var portfolioIsotope = $('.portfolio-container').isotope({
-      itemSelector: '.portfolio-item',
+    var swipePageIsotope = $('.swipePage-container').isotope({
+      itemSelector: '.swipePage-item',
       layoutMode: 'fitRows'
     });
 
-    $('#portfolio-flters li').on('click', function() {
-      $("#portfolio-flters li").removeClass('filter-active');
+    $('#swipePage-flters li').on('click', function() {
+      $("#swipePage-flters li").removeClass('filter-active');
       $(this).addClass('filter-active');
 
-      portfolioIsotope.isotope({
+      swipePageIsotope.isotope({
         filter: $(this).data('filter')
       });
       aos_init();
@@ -152,8 +152,8 @@
     });
   });
 
-  // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonials-carousel").owlCarousel({
+  // messagePage carousel (uses the Owl Carousel library)
+  $(".messagePage-carousel").owlCarousel({
     autoplay: true,
     dots: true,
     loop: true,
@@ -170,8 +170,8 @@
     }
   });
 
-  // Portfolio details carousel
-  $(".portfolio-details-carousel").owlCarousel({
+  // swipePage details carousel
+  $(".swipePage-details-carousel").owlCarousel({
     autoplay: true,
     dots: true,
     loop: true,
